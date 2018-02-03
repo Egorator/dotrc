@@ -115,3 +115,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -z "$ORIG_PATH" ]; then
+    export ORIG_PATH=$PATH
+fi
+
+export PATH=$ORIG_PATH
+export PATH=/media/files/workspace/dotrc/bin:$PATH
