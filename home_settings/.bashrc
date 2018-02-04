@@ -122,3 +122,22 @@ fi
 
 export PATH=$ORIG_PATH
 export PATH=/media/files/workspace/dotrc/bin:$PATH
+
+source /usr/share/bash-completion/completions/git
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias glog='git log --all --graph --decorate --color=always | cless -i'
+alias ga='git add'
+__git_complete ga _git_add
+alias gs='git status'
+alias gsh='git show HEAD'
+alias gd='git diff'
+__git_complete gd _git_diff
+alias gco='git commit'
+alias gcoa='git commit --amend'
+alias gcu='git commit --amend --no-edit -a'
+alias gch='git checkout'
+__git_complete gch _git_checkout
+alias gb='git branch'
+__git_complete gb _git_branch
+alias gpl='git pull'
