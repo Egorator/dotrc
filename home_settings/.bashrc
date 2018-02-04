@@ -126,7 +126,7 @@ export PATH=/media/files/workspace/dotrc/bin:$PATH
 source /usr/share/bash-completion/completions/git
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias glog='git log --all --graph --decorate --color=always | cless -i'
+alias glog='git log --all --graph --decorate --color=always | less -R -i'
 alias ga='git add'
 __git_complete ga _git_add
 alias gs='git status'
