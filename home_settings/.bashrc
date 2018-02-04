@@ -123,6 +123,8 @@ fi
 export PATH=$ORIG_PATH
 export PATH=/media/files/workspace/dotrc/bin:$PATH
 
+export EDITOR=e
+
 source /usr/share/bash-completion/completions/git
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
